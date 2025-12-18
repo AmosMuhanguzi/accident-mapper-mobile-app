@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_user_placeholder"
+                android:layout_marginEnd="8dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/teal_700"/>
+
+            <TextView
+                android:id="@+id/tv_user_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AccidentMapper User"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_location_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: [Formatted Time] | Location: Captured"
+            android:textSize="12sp"
+            android:textColor="@color/teal_700"/>
+
+        <ImageView
+            android:id="@+id/iv_accident_media"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Accident Media"
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details:"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:textColor="@color/teal_200"
+            android:layout_marginTop="8dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dp"
+            android:padding="4dp"
+            android:background="#F0F0F0">
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[Accident Description text...]"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+        </ScrollView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

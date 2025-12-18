@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Report an Accident">
+        <menu>
+            <item
+                android:id="@+id/nav_report_text"
+                android:icon="@drawable/ic_text_report"
+                android:title="Text Report" />
+            <item
+                android:id="@+id/nav_report_camera"
+                android:icon="@drawable/ic_camera"
+                android:title="Capture Image" />
+            <item
+                android:id="@+id/nav_report_video"
+                android:icon="@drawable/ic_video"
+                android:title="Record Video" />
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_gallery"
+                android:title="Select from Gallery" />
+        </menu>
+    </item>
+
+    <item android:title="User Actions">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About Us" />
+        </menu>
+    </item>
+</menu>

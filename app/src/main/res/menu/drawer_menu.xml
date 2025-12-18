@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_report"
+        android:title="REPORT AN ACCIDENT"
+        android:icon="@android:drawable/ic_menu_edit" />
+
+    <item
+        android:id="@+id/nav_capture"
+        android:title="Capture Image"
+        android:icon="@android:drawable/ic_menu_camera" />
+
+    <item
+        android:id="@+id/nav_record"
+        android:title="Record Video"
+        android:icon="@android:drawable/ic_media_play" />
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:title="Select from Gallery"
+        android:icon="@drawable/gallery" />
+    <item
+        android:id="@+id/nav_about"
+        android:title="About Us"
+        android:icon="@drawable/about" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_lock_power_off" />
+</menu>

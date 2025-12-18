@@ -1,0 +1,24 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Accident Mapper</string>
+
+    <!-- Drawer strings -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Home Menu / Actions -->
+    <string name="menu_report">Report Accident</string>
+    <string name="menu_capture">Capture Image</string>
+    <string name="menu_record">Record Video</string>
+    <string name="menu_gallery">Select From Gallery</string>
+    <string name="menu_logout">Logout</string>
+    <string name="home">Home</string>
+
+    <!-- Fragment placeholders (for generated navigation templates) -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="action_settings">Settings</string>
+</resources>

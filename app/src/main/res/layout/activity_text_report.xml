@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accident Details"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/et_report_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:gravity="top|start"
+        android:hint="Describe the accident details (max 500 characters)..."
+        android:inputType="textMultiLine"
+        android:maxLength="500"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="@color/black"
+        android:textColorHint="@color/teal_700"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time and Location will be captured automatically."
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btn_submit_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Submit Report" />
+
+</LinearLayout>

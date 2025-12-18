@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ReportPreviewActivity">
+
+    <LinearLayout
+        android:id="@+id/user_info_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_reporter_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_user_placeholder" />
+
+        <TextView
+            android:id="@+id/tv_reporter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:text="Amos Mutua" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_media_preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@+id/user_info_header"
+        android:contentDescription="Selected accident media"
+        android:src="@drawable/ic_video_placeholder" />
+
+    <EditText
+        android:id="@+id/et_preview_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Describe the accident details here..."
+        android:minLines="3"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/iv_media_preview" />
+
+    <Button
+        android:id="@+id/btn_preview_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Submit Accident Report"
+        app:layout_constraintTop_toBottomOf="@+id/et_preview_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
