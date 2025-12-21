@@ -1,12 +1,12 @@
 # accident-mapper-mobile-app
 An app for streaming accidents in our local communities
 
-🚧 Accident Mapper Mobile Application
-📌 Project Overview
+#🚧 Accident Mapper Mobile Application
+#📌 Project Overview
 
 Accident Mapper is an Android-based mobile application designed to facilitate real-time road accident reporting by the public. The application allows users to report accidents using text descriptions, images, and videos, which are then displayed on a centralized dashboard categorized by time. The system aims to improve road safety awareness, incident documentation, and emergency response readiness, particularly in developing regions such as Uganda.
 
-🎯 Objectives
+#🎯 Objectives
 # General Objective
 
 To design and implement a mobile application that enables real-time reporting, storage, and visualization of road traffic accidents.
@@ -59,7 +59,7 @@ Secure logout functionality.
 
 Base64 image encoding stored in the database (no paid cloud storage required).
 
-🏗️ System Architecture
+#🏗️ System Architecture
 
 The application follows a client–database architecture:
 
@@ -88,7 +88,7 @@ Authentication	sqlite Authentication
 Image Handling	url saving mode in the database
 IDE	Android Studio
 # Architecture	MVC-based Android Architecture
-📱 Application Modules
+#📱 Application Modules
 
 Login & Signup Module
 
@@ -106,7 +106,7 @@ User Profile Popup
 
 Logout & Session Management
 
-🚀 Installation & Setup
+#🚀 Installation & Setup
 Prerequisites
 
 Android Studio (latest version)
