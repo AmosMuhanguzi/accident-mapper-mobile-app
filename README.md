@@ -39,9 +39,9 @@ Video recording support.
 
 # 🕒 Accident Categorization
 
-Recent accidents (within the last 1 hour).
+Recent accidents (within the last one week).
 
-Earlier accidents (older than 1 hour).
+Earlier accidents (older than one week).
 
 # 🧾 Accident Feed
 
